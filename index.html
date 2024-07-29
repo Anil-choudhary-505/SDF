@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saran Milk Farm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Fevicon.png" type="image/x-icon">
+</head>
+<body>
+<!--navbar start-->
+<nav>
+    
+    <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tel:+919929278321">Contact</a></li>
+        <li><a href="#backupButton">About</a></li>
+      </ul>
+      
+      <div class="tuf15">
+        
+        <ul>
+        <li><a href="#"><img src="f-logo.png"  class="navbar-logo"></a></li>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="tel:+919929278321">Contact</a></li>
+        <li class="hideOnMobile"><a href="#backupButton">About</a></li>
+        
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+          </ul>
+      </div>
+    </div>
+</nav> 
+<!--Navbar-End-->
+<div class="message-line">
+    <p>Use Desktop Mode for Better Experience.</p>
+</div>
+
+
+    <div id="loader">
+        <div class="loader-ring"></div>
+        <img src="logo.jpeg" alt="Logo">
+    </div>
+    <div class="container">
+        <h1>Dairy Records🐮</h1>
+        <form id="milkForm">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="quantity">Quantity (liters):</label>
+            <input type="number" id="quantity" name="quantity" step="0.01" required>
+            
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time">
+            
+            <label for="source">Source:</label>
+            <select id="source" name="source">
+                <option value="cow">Cow</option>
+                <option value="buffalo">Buffalo</option>
+            </select>
+            
+            <label for="notes">Notes:</label>
+            <textarea id="notes" name="notes"></textarea>
+            
+            <label for="cost">Cost per liter:</label>
+            <input type="number" id="cost" name="cost" step="0.01" required>
+            
+            <label for="customer">Customer:</label>
+            <input type="text" id="customer" name="customer" required>
+            
+            <button type="submit">Add Record</button>
+        </form>
+        
+        <h2 ><b>Customer Records⏺️</b></h2>
+        <div id="customerRecords">
+            <!-- Customer records will be added here -->
+        </div>
+        
+        <button id="backupButton">Backup Records</button>
+    </div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section logo-section">
+            <img src="Fevicon.png" alt="Dairykhata Logo" class="footer-logo">
+            <p>SaranDairy Farm is a Web-Page where daily Milk Record are maintained.</p>
+        </div>
+        
+        <div class="footer-section support-section">
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="care@SaranDairyfarm.in">📧care@SaranDairyfarm.in</a></li>
+                <li><a href="tel:9929278321">📱9929278321</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-section address-section">
+            <h3>Address</h3>
+            <p>🛍️Near Rameshwaram Dham Pal Goan Jodhpur Raj.(342014)</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright © 2024</p>
+    </div>
+</footer>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
